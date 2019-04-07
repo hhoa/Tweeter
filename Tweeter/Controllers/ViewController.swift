@@ -12,6 +12,9 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     @IBOutlet weak var postTableView: UITableView!
     
+    let cellIdentifier: String = "PostCell"
+    let placeholderName: String = "Kha Hoa"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.

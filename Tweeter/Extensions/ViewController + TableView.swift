@@ -11,10 +11,19 @@ import UIKit
 
 extension ViewController {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        <#code#>
+        return PostManager.instance.sections[section].countPosts()
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        <#code#>
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! PostTableViewCell
+        let section: Section = PostManager.instance.sections[indexPath.section]
+        let post = section.posts[indexPath.row]
+        
+        cell.imgAvatar.image = section.imgAvatar
+        cell.lblUsername.text = section.username
+        cell.lblContent.text = post.content
+        cell.lblIndex.text = "\(post.index)/\(section.countPosts())"
+        
+        return cell
     }
 }

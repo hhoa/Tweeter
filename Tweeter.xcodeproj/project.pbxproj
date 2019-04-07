@@ -17,6 +17,9 @@
 		DFA96A1C22599AB500E58138 /* CircleImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA96A1B22599AB500E58138 /* CircleImageView.swift */; };
 		DFA96A1E22599FA500E58138 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA96A1D22599FA500E58138 /* PostTableViewCell.swift */; };
 		DFA96A212259A19200E58138 /* ViewController + TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA96A202259A19200E58138 /* ViewController + TableView.swift */; };
+		DFA96A242259A29000E58138 /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA96A232259A29000E58138 /* Section.swift */; };
+		DFA96A262259A42700E58138 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA96A252259A42700E58138 /* Post.swift */; };
+		DFA96A282259A46200E58138 /* PostManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA96A272259A46200E58138 /* PostManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,9 @@
 		DFA96A1B22599AB500E58138 /* CircleImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImageView.swift; sourceTree = "<group>"; };
 		DFA96A1D22599FA500E58138 /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
 		DFA96A202259A19200E58138 /* ViewController + TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController + TableView.swift"; sourceTree = "<group>"; };
+		DFA96A232259A29000E58138 /* Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
+		DFA96A252259A42700E58138 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		DFA96A272259A46200E58138 /* PostManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +91,7 @@
 		DFA969F5225991F900E58138 /* Tweeter */ = {
 			isa = PBXGroup;
 			children = (
+				DFA96A222259A26700E58138 /* Models */,
 				DFA96A18225996BE00E58138 /* Support Files */,
 				DFA96A1F2259A16A00E58138 /* Extensions */,
 				DFA96A17225996A500E58138 /* Views */,
@@ -138,6 +145,16 @@
 				DFA96A202259A19200E58138 /* ViewController + TableView.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		DFA96A222259A26700E58138 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DFA96A232259A29000E58138 /* Section.swift */,
+				DFA96A252259A42700E58138 /* Post.swift */,
+				DFA96A272259A46200E58138 /* PostManager.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -244,8 +261,11 @@
 				DFA96A1C22599AB500E58138 /* CircleImageView.swift in Sources */,
 				DFA969F9225991F900E58138 /* ViewController.swift in Sources */,
 				DFA96A212259A19200E58138 /* ViewController + TableView.swift in Sources */,
+				DFA96A262259A42700E58138 /* Post.swift in Sources */,
 				DFA96A1E22599FA500E58138 /* PostTableViewCell.swift in Sources */,
+				DFA96A282259A46200E58138 /* PostManager.swift in Sources */,
 				DFA969F7225991F900E58138 /* AppDelegate.swift in Sources */,
+				DFA96A242259A29000E58138 /* Section.swift in Sources */,
 				DFA96A1A225998B800E58138 /* RoundedView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
