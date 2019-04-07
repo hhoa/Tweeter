@@ -10,6 +10,10 @@ import UIKit
 
 
 extension ViewController {
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return PostManager.instance.countSections()
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return PostManager.instance.sections[section].countPosts()
     }

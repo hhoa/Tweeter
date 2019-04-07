@@ -20,6 +20,8 @@
 		DFA96A242259A29000E58138 /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA96A232259A29000E58138 /* Section.swift */; };
 		DFA96A262259A42700E58138 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA96A252259A42700E58138 /* Post.swift */; };
 		DFA96A282259A46200E58138 /* PostManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA96A272259A46200E58138 /* PostManager.swift */; };
+		DFADFC782259DFB8007C600A /* CreatePostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFADFC772259DFB8007C600A /* CreatePostViewController.swift */; };
+		DFADFC7A2259E4D8007C600A /* CreatePostViewController + TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFADFC792259E4D8007C600A /* CreatePostViewController + TextView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +52,8 @@
 		DFA96A232259A29000E58138 /* Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
 		DFA96A252259A42700E58138 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		DFA96A272259A46200E58138 /* PostManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostManager.swift; sourceTree = "<group>"; };
+		DFADFC772259DFB8007C600A /* CreatePostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePostViewController.swift; sourceTree = "<group>"; };
+		DFADFC792259E4D8007C600A /* CreatePostViewController + TextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CreatePostViewController + TextView.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				DFA969F8225991F900E58138 /* ViewController.swift */,
+				DFADFC772259DFB8007C600A /* CreatePostViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -143,6 +148,7 @@
 			isa = PBXGroup;
 			children = (
 				DFA96A202259A19200E58138 /* ViewController + TableView.swift */,
+				DFADFC792259E4D8007C600A /* CreatePostViewController + TextView.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -258,10 +264,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DFADFC782259DFB8007C600A /* CreatePostViewController.swift in Sources */,
 				DFA96A1C22599AB500E58138 /* CircleImageView.swift in Sources */,
 				DFA969F9225991F900E58138 /* ViewController.swift in Sources */,
 				DFA96A212259A19200E58138 /* ViewController + TableView.swift in Sources */,
 				DFA96A262259A42700E58138 /* Post.swift in Sources */,
+				DFADFC7A2259E4D8007C600A /* CreatePostViewController + TextView.swift in Sources */,
 				DFA96A1E22599FA500E58138 /* PostTableViewCell.swift in Sources */,
 				DFA96A282259A46200E58138 /* PostManager.swift in Sources */,
 				DFA969F7225991F900E58138 /* AppDelegate.swift in Sources */,
