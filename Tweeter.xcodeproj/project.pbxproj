@@ -13,6 +13,10 @@
 		DFA969FE225991FA00E58138 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFA969FD225991FA00E58138 /* Assets.xcassets */; };
 		DFA96A01225991FA00E58138 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFA969FF225991FA00E58138 /* LaunchScreen.storyboard */; };
 		DFA96A0C225991FB00E58138 /* TweeterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA96A0B225991FB00E58138 /* TweeterTests.swift */; };
+		DFA96A1A225998B800E58138 /* RoundedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA96A19225998B800E58138 /* RoundedView.swift */; };
+		DFA96A1C22599AB500E58138 /* CircleImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA96A1B22599AB500E58138 /* CircleImageView.swift */; };
+		DFA96A1E22599FA500E58138 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA96A1D22599FA500E58138 /* PostTableViewCell.swift */; };
+		DFA96A212259A19200E58138 /* ViewController + TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA96A202259A19200E58138 /* ViewController + TableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +40,10 @@
 		DFA96A07225991FB00E58138 /* TweeterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TweeterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFA96A0B225991FB00E58138 /* TweeterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweeterTests.swift; sourceTree = "<group>"; };
 		DFA96A0D225991FB00E58138 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DFA96A19225998B800E58138 /* RoundedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedView.swift; sourceTree = "<group>"; };
+		DFA96A1B22599AB500E58138 /* CircleImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImageView.swift; sourceTree = "<group>"; };
+		DFA96A1D22599FA500E58138 /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
+		DFA96A202259A19200E58138 /* ViewController + TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController + TableView.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,12 +85,10 @@
 		DFA969F5225991F900E58138 /* Tweeter */ = {
 			isa = PBXGroup;
 			children = (
-				DFA969F6225991F900E58138 /* AppDelegate.swift */,
-				DFA969F8225991F900E58138 /* ViewController.swift */,
-				DFA969FA225991F900E58138 /* Main.storyboard */,
-				DFA969FD225991FA00E58138 /* Assets.xcassets */,
-				DFA969FF225991FA00E58138 /* LaunchScreen.storyboard */,
-				DFA96A02225991FA00E58138 /* Info.plist */,
+				DFA96A18225996BE00E58138 /* Support Files */,
+				DFA96A1F2259A16A00E58138 /* Extensions */,
+				DFA96A17225996A500E58138 /* Views */,
+				DFA96A162259969C00E58138 /* Controllers */,
 			);
 			path = Tweeter;
 			sourceTree = "<group>";
@@ -94,6 +100,44 @@
 				DFA96A0D225991FB00E58138 /* Info.plist */,
 			);
 			path = TweeterTests;
+			sourceTree = "<group>";
+		};
+		DFA96A162259969C00E58138 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DFA969F8225991F900E58138 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		DFA96A17225996A500E58138 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DFA969FF225991FA00E58138 /* LaunchScreen.storyboard */,
+				DFA969FA225991F900E58138 /* Main.storyboard */,
+				DFA96A19225998B800E58138 /* RoundedView.swift */,
+				DFA96A1B22599AB500E58138 /* CircleImageView.swift */,
+				DFA96A1D22599FA500E58138 /* PostTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DFA96A18225996BE00E58138 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				DFA969F6225991F900E58138 /* AppDelegate.swift */,
+				DFA969FD225991FA00E58138 /* Assets.xcassets */,
+				DFA96A02225991FA00E58138 /* Info.plist */,
+			);
+			path = "Support Files";
+			sourceTree = "<group>";
+		};
+		DFA96A1F2259A16A00E58138 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				DFA96A202259A19200E58138 /* ViewController + TableView.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,8 +241,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DFA96A1C22599AB500E58138 /* CircleImageView.swift in Sources */,
 				DFA969F9225991F900E58138 /* ViewController.swift in Sources */,
+				DFA96A212259A19200E58138 /* ViewController + TableView.swift in Sources */,
+				DFA96A1E22599FA500E58138 /* PostTableViewCell.swift in Sources */,
 				DFA969F7225991F900E58138 /* AppDelegate.swift in Sources */,
+				DFA96A1A225998B800E58138 /* RoundedView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,7 +410,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SXD45RS7HC;
-				INFOPLIST_FILE = Tweeter/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Tweeter/Support Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -381,7 +429,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SXD45RS7HC;
-				INFOPLIST_FILE = Tweeter/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Tweeter/Support Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

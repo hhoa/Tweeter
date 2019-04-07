@@ -8,13 +8,20 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+    
+    @IBOutlet weak var postTableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        setupTableView()
     }
 
+    func setupTableView() {
+        postTableView.dataSource = self
+        postTableView.delegate = self
+    }
 
 }
 
